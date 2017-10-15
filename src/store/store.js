@@ -7,4 +7,6 @@ const store = createStore(
     DevTools.instrument()
     );
 
+store.dispatch()
+
 export default store;
