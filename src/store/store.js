@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from 'redux';
-import DevTools from './DevTools';
+import DevTools from '../DevTools';
 import reducers from '../reducers/index';
 
 const store = createStore(

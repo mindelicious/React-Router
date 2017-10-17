@@ -4,10 +4,24 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import DevTools from './DevTools';
 
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Test App</h1>
+                <Provider store={store}>
+                    <DevTools />
+                </Provider>
+            </div>
+        );
+    }
+}
+
 render(
-    <Provider store={store}>
-        <h1>ini project</h1>,
-        <DevTools />
-    </Provider>,
+    <App />,
     document.getElementById('root')
 );
