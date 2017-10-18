@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
-const Navigation = props =>
+const Navigation = props => (
     <div>
         <nav className="navbar navbar-default">
             <div className="container-fluid">
@@ -23,5 +23,6 @@ const Navigation = props =>
             {props.children}
         </div>
     </div>
+);
 
 export default Navigation;
