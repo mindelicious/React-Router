@@ -29,4 +29,4 @@ const CountryDetails = (props) => (
     </div>
 );
 
-export default CountryDeatils;
+export default CountryDetails;
