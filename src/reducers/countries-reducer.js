@@ -8,7 +8,6 @@ const initialState = {
 };
 
 const countriesReducer = function (state = initialState, action) {
-    console.log(action);
     switch (action.type) {
         case GET_COUNTRIES:
             return Object.assign({}, state, {countries: state.countries});
