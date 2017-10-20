@@ -3,7 +3,6 @@ export const GET_COUNTRY = 'GET_COUNTRY';
 export const DELETE_COUNTRY = 'DELETE_COUNTRY';
 export const SEARCH_COUNTRIES = 'SEARCH_COUNTRIES';
 export const SET_CONTINENT = 'SET_CONTINENT';
-export const SEARCH_CONTINENT = 'SEARCH_CONTINENT';
 
 export function getCountries() {
     return {
@@ -34,7 +33,7 @@ export function searchCountries(searchText) {
 
 export function setContinent(name) {
     return {
-        type: SEARCH_CONTINENT,
+        type: SET_CONTINENT,
         name
     }
 }
