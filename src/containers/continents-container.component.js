@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import { setContinent, deleteCountry } from '../actions/actions-countries';
 import CountryFlagList from '../presentational/flag-list.component';
 
@@ -8,6 +9,7 @@ class ContinentsContainer extends Component {
 		super(props);
 
 		this.deleteCountry = this.deleteCountry.bind(this);
+		this.chooseContinent = this.chooseContinent.bind(this);
 	}
 
 	chooseContinent(event) {
@@ -29,7 +31,7 @@ class ContinentsContainer extends Component {
 					<option value="Europa">Europa</option>
 					<option value="Afryka">Afryka</option>
 				</select>
-				<CountryFlagList countries={this.props.visibleCountries} deleteCountry={this.deleteCountry}/>
+				<CountryFlagList countries={this.props.visibleCountries} deleteCountry={ this.deleteCountry }/>
 			</div>
 		)
 	}
