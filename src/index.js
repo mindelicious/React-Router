@@ -4,6 +4,7 @@ import { Router, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import routes from './routes';
+import './country.css';
 
 render(
     <Provider store={store}>
